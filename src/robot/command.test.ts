@@ -9,6 +9,7 @@ const TEST_CASES = [
       MOVE
       REPORT
       PLACE 0,0,NORTH
+      PLACE 6,6,SOUTH
       MOVE
       REPORT`,
     expectedPosition: [0, 1, Direction.NORTH],
