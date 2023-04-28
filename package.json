@@ -6,6 +6,7 @@
     "start": "next start",
     "test": "jest --watch",
     "test:ci": "jest --ci",
+    "cypress": "cypress open",
     "deploy": "BASE_PATH=/robot-vacuum next build && touch out/.nojekyll && git add out/ && git commit -m \"Deploy\" && git subtree push --prefix out origin gh-pages"
   },
   "dependencies": {
@@ -22,6 +23,7 @@
     "@testing-library/user-event": "14.4.3",
     "@types/react": "18.0.28",
     "@types/testing-library__jest-dom": "5.14.5",
+    "cypress": "^12.11.0",
     "eslint": "^8.39.0",
     "eslint-config-next": "^13.3.1",
     "eslint-plugin-testing-library": "^5.10.3",
