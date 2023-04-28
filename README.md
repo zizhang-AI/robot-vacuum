@@ -6,9 +6,9 @@ The input will take a list of commands, and after the submit button is hit, the 
 
 A node (>= 16) environment is needed to make it work. First, install the dependencies
 ```bash
-npm install
+npm i
 # or
-yarn install
+yarn
 ```
 And then you can run the following command to start the development server
 
