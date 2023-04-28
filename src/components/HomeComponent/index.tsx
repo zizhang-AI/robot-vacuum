@@ -1,8 +1,8 @@
 import { Button, TextField } from "@mui/material";
 import { useState } from "react";
-import { Robot } from "@/robot/robot";
-import { parseCommands } from "@/robot/command";
-import { Direction } from "@/robot/types";
+import { Robot } from "@/business/robot";
+import { parseCommands } from "@/business/command";
+import { Direction } from "@/business/types";
 import styles from './index.module.css'
 
 export  function HomeComponent() {
@@ -29,7 +29,7 @@ export  function HomeComponent() {
       <Button variant="contained" onClick={onSubmit}>
         Submit
       </Button>
-      {output && <h1>{`${output[0]}, ${output[1]}, ${output[2]}`}</h1>}
+      {output && <h1>{`${output[0]},${output[1]},${output[2]}`}</h1>}
     </div>
   );
 }

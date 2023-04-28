@@ -36,4 +36,10 @@ describe("Robot", () => {
     robot.move();
     expect(robot.getPosition()).toEqual([0, 4, Direction.NORTH]);
   });
+
+  it("should not move the robot if it would exceed the dimension limits", () => {
+    robot.place(0, 0, Direction.SOUTH);
+    robot.move();
+    expect(robot.getPosition()).toEqual([0, 0, Direction.SOUTH]);
+  });
 });
