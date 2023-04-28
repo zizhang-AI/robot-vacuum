@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   output: 'export',
-  basePath: '/robot-vacuum',
+  basePath: process.env.BASE_PATH || '/',
   experimental: {
     appDir: true,
   },

@@ -29,7 +29,7 @@ export  function HomeComponent() {
       <Button variant="contained" onClick={onSubmit}>
         Submit
       </Button>
-      {output && <h1>{`${output[0]},${output[1]},${output[2]}`}</h1>}
+      {output && <h1>{`${output[0]}, ${output[1]}, ${output[2]}`}</h1>}
     </div>
   );
 }
